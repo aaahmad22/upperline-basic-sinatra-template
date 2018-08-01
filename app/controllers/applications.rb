@@ -1,5 +1,5 @@
 require './config/environment'
-require './app/models/sample_model'
+require './app/models/Cities'
 
 class ApplicationController < Sinatra::Base
   configure do
@@ -8,6 +8,10 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/' do
-    return erb :index
+   return erb :index
   end
-end
+  
+  get '/nyc' do 
+   return erb :NYC
+  end
+end 
