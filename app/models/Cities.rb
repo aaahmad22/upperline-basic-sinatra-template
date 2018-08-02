@@ -49,31 +49,6 @@ puts Miami.food
 puts Miami.attraction
 
 
-class LA
-    
-    @@options = {
-        :food => ["Dan Tanas", "Guerrilla Taco", "Philippe The Original", "Newport Seafood Restaurant", "Jon and Vinny's"],
-        :attraction => ["Universal Studios Hollywood", "Griffith Park and Griffith Observatory", "Disneyland Resort", "Hollywood", "Santa Monica", "Natural History Museum"]
-    }
-    
-    def initialize (choice)
-        @@choice = choice
-    end
-    
-    def self.food
-        @@options[:food]
-    end
-    
-    def self.attraction
-        @@options[:attraction]
-    end
-    
-end
-
-puts LA.food
-puts LA.attraction
-
-
 class Raleigh
     
     @@options = {
@@ -147,3 +122,28 @@ end
 
 puts Seattle.food
 puts Seattle.attraction
+
+
+class LA
+    
+    @@options = {
+        :food => ["Dan Tanas", "Guerrilla Taco", "Philippe The Original", "Newport Seafood Restaurant", "Jon and Vinny's", "The Apple Pan"],
+        :attractions => ["Universal Studios Hollywood", "Griffith Park and Griffith Observatory", "Disneyland Resort", "Hollywood", "Santa Monica", "Natural History Museum"]
+    }
+    
+    def initialize (choice)
+        @@choice = choice
+    end
+    
+    def self.food
+        @@options[:food]
+    end
+    
+    def self.attractions
+        @@options[:attractions]
+    end
+    
+end
+
+puts LA.food
+puts LA.attractions
