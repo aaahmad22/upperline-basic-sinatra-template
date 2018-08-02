@@ -3,7 +3,7 @@ class New_York_City
 @@options = {
 
   :food => ["Gramercy Tavern","Balthazar","Grand Central Oyster bar", "Patsy’s Pizzeria", "Russ and Daughters", "Pisillo Italian Panini" ],
-  :attractions => ["Empire State Building", "Statue of Liberty","Ellis Island", "Freedom Tower", "Metropolitan Museum of Art","Madame Tussauds"]
+  :attractions => ["Empire State Building", "Statue of Liberty + Ellis Island", "Freedom Tower", "Metropolitan Museum of Art","Madame Tussauds","Broadway"]
 }
 
 def initialize (choice)
@@ -123,3 +123,27 @@ end
 puts Chicago.food
 puts Chicago.attraction
 
+
+class Seattle
+    
+    @@options = {
+        :food => ["Altura", "Sushi Kashiba","The Hi-Life","Tilikum Place Cafe", "Revel", "Tacos Chukis"],
+        :attraction => ["Seattle Aquarium", "Seattle Art Museum – two ways", "Pacific Science Center", "Space Needle", "Museum of Pop Culture (MoPOP)", "Seattle Great Wheel"]
+    }
+    
+    def initialize (choice)
+        @@choice = choice
+    end
+    
+    def self.food
+        @@options[:food]
+    end
+    
+    def self.attraction
+        @@options[:attraction]
+    end
+    
+end
+
+puts Seattle.food
+puts Seattle.attraction
