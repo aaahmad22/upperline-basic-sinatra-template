@@ -8,23 +8,27 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/' do
-   return erb :index
+   erb :index
   end
   
   get '/nyc' do 
-   return erb :NYC
+   erb :NYC
   end
   
   get '/chicago' do
-    return erb :Chicago
+   erb :Chicago
   end 
   
-  get '/raleigh'
-    return erb :Raleigh
+  get '/raleigh' do 
+   erb :Raleigh
   end
   
   get '/seattle' do
-    return erb :Seattle
+   erb :Seattle
   end 
+  
+  get '/LA' do 
+   erb :LA  
+  end
 end 
 
